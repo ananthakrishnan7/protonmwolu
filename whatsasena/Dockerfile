@@ -1,9 +1,9 @@
-FROM fusuf/whatsasena:latest
+FROM souravkl11/raganork:test
 
-RUN git clone https://github.com/ananthakrishnan7 /protonmwolu /root/WhatsAsenaDuplicated
-WORKDIR /root/WhatsAsenaDuplicated/
-ENV TZ=Europe/Istanbul
+RUN git clone https://github.com/souravkl11/Raganork/ /skl/raganork
+WORKDIR /skl/raganork 
+ENV TZ = Asia/Kolkata
 RUN npm install supervisor -g
 RUN yarn install --no-audit
 
-CMD ["node", "bot.js"]
+CMD ["node", "raganork.js"]
